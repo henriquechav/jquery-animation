@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<style type="text/css">
+			img{
+				position: relative;
+			}
+			.other{
+				width: 300px;
+				height: 300px;
+			}
+			#container{
+				margin-top: 65px;
+				position: relative;
+			}
+			.col{
+				height: 350px;
+			}
+		</style>
+		
+		<title>Atividade JQuery</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript">
+		 	$(document).ready(function(){
+		 		$("img").on({
+		 			mouseenter: function(){
+		 				$(this).animate({
+		 					width: "+=50px",
+		 					height: "+=50px"
+						});
+					},
+					mouseleave: function(){
+						$(this).animate({
+							width: "-=50px",
+							height: "-=50px"
+						});
+					}
+		 		});
+		 	});
+		</script>
+	</head>
+
+	<body class="bg-light">
+		<div class="jumbotron text-center bg-secondary text-white">
+  			<h1 class="display-2">Atividade JQuery</h1>
+  			<p>Atividade de Henrique Chaves Lopes e Francisco Lucidio de Jesus Soares Moura Junior</p> 
+		</div>
+		<div class="container text-center bg-light text-secondary">
+  			<div class="row">
+    			<div class="col">
+      				<h2>Imagem 1</h2>
+      				<img src="images/Good, Bad, Ugly Frame.jpg" alt="Blondie (The Good, the Bad, and the Ugly)">
+    			</div>
+    			<div class="col">
+				    <h2>Imagem 2</h2>
+				    <img src="images/Fight Club Frame.jpg" alt="Narrator (Fight Club)">
+    			</div>
+    			<div class="col">
+			    	<h2>Imagem 3</h2>  
+			    	<img src="images/Her Frame.jpg" alt="Theodore (Her)">      
+    			</div>
+  			</div>
+		</div>
+		<div class="container text-center bg-light text-secondary" id="container">
+			<div class="row">
+				<div class="col">
+					<h2>Imagem 4</h2>
+					<img src="images/Ciri Frame.png" alt="Ciri" class="other">
+				</div>
+				<div class="col">
+					<h2>Imagem 5</h2>
+					<img src="images/Bebe Frame.jpg" alt="Bebê" class="other">
+				</div>
+				<div class="col">
+					<h2>Imagem 6</h2>
+					<img src="images/Ellie Frame.jpg" alt="Ellie" class="other">
+				</div>
+			</div>
+		</div>
+		<div style="height: 50px;" class="bg-light"></div> <!-- Div só para criar espaço no fim da página. -->
+	</body>
+</html>
